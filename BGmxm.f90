@@ -1,5 +1,5 @@
        SUBROUTINE matBG(omegacnt,newg)
-             
+       
        IMPLICIT NONE
 
        INCLUDE 'bounds.h'
@@ -14,20 +14,17 @@
        ntot = dim*ndat
         
        DO cnt=1,dim
-        DO kcnt=1,dim
+          DO kcnt=1,dim
 
-        CALL mkgmat(omegacnt,cnt,kcnt,newg)        
+            CALL mkgmat(omegacnt,cnt,kcnt,newg)        
         
-        DO ii=1,ndat
-         DO jj=1,ndat
-         
-         greens_p(ii,jj,cnt,kcnt)=newg(ii,jj)
-c          print*,'newg',ii,jj,kcnt,cnt,newg(ii,jj)            
-
-         END DO
-        END DO
+             DO ii=1,ndat
+                DO jj=1,ndat
+                   greens_p(ii,jj,cnt,kcnt)=newg(ii,jj)
+                END DO
+             END DO
         
-        END DO
+          END DO
        END DO
               
        DO cnt=1,ndat
