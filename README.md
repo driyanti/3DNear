@@ -1,7 +1,7 @@
 # 3DNear
 Modeling of scattered surface waves
 
-3DNear is a code for solving the scattering problem efficiently. I developed this method during my PhD at TUDELFT, The Netherlands. 
+3DNear consist of codes for solving the scattering problem using the integral equation method. I implemented and developed this method during my PhD at TUDELFT, The Netherlands. 
 The codes are written in Fortran, C with MPI. To process the output data I use MATLAB.
 
 Contact : dwiriyanti@gmail.com
