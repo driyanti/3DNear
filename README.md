@@ -1,8 +1,10 @@
 # 3DNear
 Modeling of scattered surface waves
 
-3DNear consist of codes for solving the scattering problem using the integral equation method. I implemented and developed this method during my PhD at TUDELFT, The Netherlands. 
-The codes are written in Fortran, C with MPI. To process the output data I use MATLAB.
+The scattering problem is studied of an inclusion, embedded in a layered, traction-free, elastic half-space with the help of a domain-type integral-equation formulation. This problem is characteristic for near-surface scattering problems occurring in exploration seismology. The singular character of the Green's function is taken into account in an accurate and efficient manner using an asymptotic description of its near-field behaviour. The numerical results show good qualitative agreement with experimental scale-model data.
+
+3DNear consists of codes that implemented and developed during my PhD at TUDELFT, The Netherlands.\
+The codes are written in Fortran, C with MPI. Matlab was used to visualize the output data (see in the directory of pictures).
 
 Contact : dwiriyanti@gmail.com
 
